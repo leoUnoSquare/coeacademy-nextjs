@@ -15,10 +15,7 @@ export const metadata: Metadata = {
     description: "Music is the soundtrack of the life",
 };
 
-export default function RootLayout({
-                                       children,
-
-                                   }: {
+export default function RootLayout({ children }: {
     children: React.ReactNode;
 }) {
     return (

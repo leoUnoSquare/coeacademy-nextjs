@@ -7,7 +7,7 @@ import PlaylistAddIcon from "@mui/icons-material/PlaylistAdd";
 
 import { AppForm, AppModal } from ".";
 
-import submitNewPlaylist from "@/app/actions";
+import submitNewPlaylist from "@/src/app/actions";
 import { newPlaylistFormFields } from "@/lib/utils";
 
 export default function AddPlayListButton() {
