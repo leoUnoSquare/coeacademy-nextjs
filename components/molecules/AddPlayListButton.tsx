@@ -19,7 +19,7 @@ export default function AddPlayListButton() {
   return (
     <>
       <button onClick={async ()=>{
-        const response = await fetch('/api/test')
+        const response = await fetch('/api/test', {method: 'POST'})
         const body = await response.text();
         console.log(body);
       }}>test edge function</button>
