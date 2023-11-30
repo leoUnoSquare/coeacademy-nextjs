@@ -3,11 +3,12 @@ import { NextResponse } from 'next/server';
 
 export function GET(request: Request) {
   const { searchParams } = new URL(request.url)
-  const iterations = 10000000;
-  const randomSum = Array(iterations).reduce((obj, _value)=>{
-    return Math.random() + obj;
-  }, 0);
-  
+  const iterations = 200000000;
+  let randomSum= 0
+  for(let i=0; i<iterations; i=i+1){
+    randomSum += Math.random();
+  }
+
   return new NextResponse(`I am a Serverless Function! ${randomSum} ${searchParams} `, {
     status: 200,
   });
