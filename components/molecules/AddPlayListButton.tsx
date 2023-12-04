@@ -18,11 +18,6 @@ export default function AddPlayListButton() {
 
   return (
     <>
-      <button onClick={async ()=>{
-        const response = await fetch('/api/test', {method: 'GET'})
-        const body = await response.text();
-        console.log(body);
-      }}>test edge function</button>
       <Tooltip title="Add new playlist">
         <IconButton
           size="large"
