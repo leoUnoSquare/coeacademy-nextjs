@@ -10,6 +10,9 @@ on:
       - 'codeacademy-nextjs/**'
       - '.github/workflows/pipeline.yaml'
 
+env:
+  REGISTRY: ${{vars.AWS_ACCOUNT_ID}}.dkr.ecr.${{vars.AWS_REGION}}.amazonaws.com
+
 jobs:
   build_and_push_to_ecr:
     runs-on: ubuntu-latest
@@ -21,7 +24,7 @@ jobs:
       - name: Login to ECR
         uses: docker/login-action@v3
         with:
-          registry: ${{ vars.REGISTRY }}
+          registry: ${{ env.REGISTRY }}
           username: ${{secrets.AWS_ACCESS_KEY_ID}}
           password: ${{secrets.AWS_SECRET_ACCESS_KEY}}
 
@@ -32,8 +35,8 @@ jobs:
           context: ./
           file: ./Dockerfile
           tags: |
-            ${{ vars.REGISTRY }}/coeacademy-nextjs:latest
-            ${{ vars.REGISTRY }}/coeacademy-nextjs:${{ github.sha }}
+            ${{ env.REGISTRY }}/coeacademy-nextjs:latest
+            ${{ env.REGISTRY }}/coeacademy-nextjs:${{ github.sha }}
       
 
   deploy:
@@ -57,7 +60,7 @@ jobs:
           username: 'ec2-user'
           key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
           script: |
-            aws ecr get-login-password | docker login --username AWS --password-stdin ${{ vars.REGISTRY }}
-            docker pull ${{ vars.REGISTRY }}/coeacademy-nextjs:latest
+            aws ecr get-login-password | docker login --username AWS --password-stdin ${{ env.REGISTRY }}
+            docker pull ${{ env.REGISTRY }}/coeacademy-nextjs:latest
             docker rm --force ui_app
-            docker run -d --name ui_app -p 80:80 ${{ vars.REGISTRY }}/coeacademy-nextjs:latest
+            docker run -d --name ui_app -p 80:80 ${{ env.REGISTRY }}/coeacademy-nextjs:latest
