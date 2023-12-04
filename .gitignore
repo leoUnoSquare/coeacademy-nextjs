@@ -37,3 +37,5 @@ next-env.d.ts
 
 # firebase
 unosquare-playlist-pulse-firebase-admin-service-account.json
+
+.env.local

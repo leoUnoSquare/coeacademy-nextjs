@@ -53,7 +53,7 @@ export default function ForgotPasswordForm() {
           <Link href="/signin">Already have an account? Sign in</Link>
         </Grid>
         <Grid item>
-          <Link href="/signup">Don't have an account? Sign Up</Link>
+          <Link href="/signup">{"Don't have an account? Sign Up"}</Link>
         </Grid>
       </Grid>
     </Box>

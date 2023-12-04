@@ -87,7 +87,7 @@ export default function SignInForm() {
           <Link href="/reset">Forgot password?</Link>
         </Grid>
         <Grid item>
-          <Link href="/signup">Don't have an account? Sign Up</Link>
+          <Link href="/signup">{"Don't have an account? Sign Up"}</Link>
         </Grid>
       </Grid>
     </Box>
