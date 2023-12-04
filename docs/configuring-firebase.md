@@ -14,7 +14,7 @@ Now we need to add a new web app, and then configure **Authentication** and **Cl
 
 ## Adding a new app
 
-On the **Project Overview** page, click on the ([**Web** icon](docs%2Fimages%2Ffirebase-add-web-app.png)). Fill in the
+On the **Project Overview** page, click on the ([**Web** icon](images%2Ffirebase-add-web-app.png)). Fill in the
 **App nickname** and click on the **Register app** button.
 
 Now copy the generated variables to your `.env.local` file as follows:
@@ -69,8 +69,8 @@ Now you need to create two collections: `users` and `playlists`.
 On the **Cloud Firestore** dashboard, click on **Start collection** and type `users` on the **Collection ID** input,
 then click **Next**. Now fill the first document as follows (click **Auto-ID** to generate an ID):
 
-![firebase-users-collection.png|400](docs%2Fimages%2Ffirebase-users-collection.png)
+![firebase-users-collection.png|400](images%2Ffirebase-users-collection.png)
 
 Repeat the same process to create a `playlists` collection and create the first document as follows:
 
-![firebase-playlists-collection.png](docs%2Fimages%2Ffirebase-playlists-collection.png)
+![firebase-playlists-collection.png](images%2Ffirebase-playlists-collection.png)
