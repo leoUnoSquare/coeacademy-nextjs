@@ -9,7 +9,7 @@ First, you need to set up the environment variables and a Firebase project.
 
 Start by copying the `.env.example` file on the root of the project and rename it to `.env.local`. Now fill the
 `NEXTAUTH_SECRET` environment variable with a random string, e.g.
-from [random.org](https://www.random.org/strings/?num=1&len=32&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new)
+from [random.org](https://www.random.org/strings/?num=1&len=32&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
 
 To configure your Firebase project follow the [Configuring Firebase](docs%2Fconfiguring-firebase.md) tutorial.
 
