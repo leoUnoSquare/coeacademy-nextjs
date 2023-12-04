@@ -26,12 +26,13 @@ git checkout day-1
 ### Install the project dependencies:
 ## VSCode Extensions
 Install the following extensions in VSCode to enhance your development experience:
-- Auto Import 
-- Better Comments
-- Code Spell Checker
-- Error Lens
-- ESLint
-- Todo Tree
+- [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
+- [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+- [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
+
 
 
 ## NPM packages
