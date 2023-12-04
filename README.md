@@ -42,8 +42,6 @@ An AWS account will be needed for deployments. The verification process could ta
 
 ## Getting Started
 
-- Firebase account: ToDo add tutorial
-
 First, you need to set up the environment variables and a Firebase project.
 
 Start by copying the `.env.example` file on the root of the project and rename it to `.env.local`. Now fill the
