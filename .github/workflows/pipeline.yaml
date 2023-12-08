@@ -8,6 +8,7 @@ on:
       - 'day5-standalone'
     paths:
       - 'codeacademy-nextjs/**'
+      - '.github/workflows/pipeline.yaml'
 
 env:
   REGISTRY: ${{vars.AWS_ACCOUNT_ID}}.dkr.ecr.${{vars.AWS_REGION}}.amazonaws.com
