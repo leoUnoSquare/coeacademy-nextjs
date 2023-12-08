@@ -40,7 +40,6 @@ jobs:
           echo 'FIREBASE_CLIENT_EMAIL=${{secrets.APP_FIREBASE_CLIENT_EMAIL}}' >> .env.local
           echo 'FIREBASE_PRIVATE_KEY="${{secrets.APP_FIREBASE_PRIVATE_KEY}}"' >> .env.local
           echo 'NEXTAUTH_SECRET=${{secrets.APP_NEXTAUTH_SECRET}}' >> .env.local
-          echo 'NEXTAUTH_URL=${{secrets.APP_NEXTAUTH_URL}}' >> .env.local
 
       - name: Build and push
         uses: docker/build-push-action@v5
