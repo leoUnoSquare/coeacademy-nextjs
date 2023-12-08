@@ -2,6 +2,7 @@ import { AppBar, Toolbar, Container, Box, Typography } from "@mui/material";
 
 import GraphicEqIcon from "@mui/icons-material/GraphicEq";
 import { AddPlayListButton, AppSearch, UserDropdown } from "../molecules";
+import { LocationDisplayer } from "../molecules/LocationDisplayer";
 
 export default function AppHeader() {
   return (
@@ -37,6 +38,7 @@ export default function AppHeader() {
           </Box>
         </Toolbar>
       </Container>
+      <LocationDisplayer />
     </AppBar>
   );
 }
