@@ -7,7 +7,7 @@ export  function LocationDisplayer () {
       onClick={async ()=>{
         const response = await fetch('/api/test');
         const {city, country, countryRegion} = await response.json();
-        console.log(city, country, countryRegion)
+        console.log(city, country, countryRegion )
       }}
     >show my location</Button>
 }
