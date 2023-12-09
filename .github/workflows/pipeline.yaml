@@ -7,7 +7,7 @@ on:
     branches:
       - 'day5-standalone'
     paths:
-      - 'codeacademy-nextjs/**'
+      - 'codeacademy-nextjs/**' 
       - '.github/workflows/pipeline.yaml'
 
 env:
